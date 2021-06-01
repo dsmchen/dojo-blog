@@ -1,15 +1,13 @@
 import Navbar from './Navbar';
 import Home from './Home';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Create from './Create';
 import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
 
 function App() {
   return (
-    // <Router>
-    <Router basename='/'>
+    <Router>
       <div className="App">
         <Navbar />
         <div className="content">
@@ -30,7 +28,6 @@ function App() {
         </div>
       </div>
     </Router>
-    // </Router>
   );
 }
 
